@@ -57,9 +57,9 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-grey-10);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(to right, #ffecd2, #fcb69f);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -84,6 +84,8 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
 }
 h3 {
   font-size: 1.25rem;
@@ -138,12 +140,13 @@ p {
 }
 
 .underline {
-  width: 5rem;
+  width: 12rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
+  background: #fcb69f;
+
   margin-right: auto;
+  margin-left: auto;
 }
 .title {
   margin-bottom: 4rem;
@@ -182,12 +185,12 @@ Jobs
   outline-color: var(--clr-primary-10);
 }
 .job-btn:hover {
-  color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
+  color: #fcb69f;
+  box-shadow: 0 2px #fcb69f;
 }
 .active-btn {
-  color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
+  color: #fcb69f;
+  box-shadow: 0 2px #fcb69f;
 }
 
 .job-info h3 {
@@ -196,7 +199,7 @@ Jobs
 .job-info h4 {
   text-transform: uppercase;
   color: var(--clr-grey-5);
-  background: var(--clr-grey-9);
+  background: #f7d39f;
   display: inline-block;
   padding: 0.375rem 0.75rem;
   border-radius: var(--radius);
@@ -216,7 +219,7 @@ Jobs
   color: var(--clr-grey-3);
 }
 .job-icon {
-  color: var(--clr-primary-5);
+  color: #fcb69f;
 }
 @media screen and (min-width: 992px) {
   .jobs-center {
@@ -233,15 +236,15 @@ Jobs
     margin-bottom: 1rem;
   }
   .active-btn {
-    box-shadow: -2px 0 var(--clr-primary-5);
+    box-shadow: -2px 0 #fcb69f;
   }
   .job-btn:hover {
-    box-shadow: -2px 0 var(--clr-primary-5);
+    box-shadow: -2px 0 #fcb69f;
   }
 }
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
+  color: #fcb69f;
   color: var(--clr-primary-9);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -264,4 +267,13 @@ Jobs
   background: var(--clr-primary-8);
 }
 .center-btn {
+}
+
+section.section {
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 2rem;
+}
+
+div.jobs-center {
+  padding: 3rem;
 }
